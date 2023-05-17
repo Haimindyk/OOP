@@ -1,0 +1,44 @@
+public class Cat extends Animal implements Land {
+
+    private static int numOfLegs;
+
+
+    public Cat(boolean mammals, boolean carnivorous, int mood) {
+        super(mammals, carnivorous, mood);
+    }
+
+    @Override
+    public void sayHello() {
+        System.out.println("meow");
+
+    }
+
+    @Override
+    public void sayHello(int mood) {
+        if (mood == this.moodHappy)
+            System.out.println("pour pour");
+        if (mood==this.moodScare)
+            System.out.println("hiesssss");
+    }
+
+
+    @Override
+    public int getNumOfLegs() {
+        return this.numOfLegs=4;
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "Cat{" +
+                "numOfLegs=" + numOfLegs +
+                ", mammals=" + mammals +
+                ", carnivorous=" + carnivorous +
+                ", mood=" + mood +
+                '}';
+    }
+}
+
+
+
+
