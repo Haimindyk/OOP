@@ -1,0 +1,6 @@
+public interface Water {
+
+
+    public boolean hasLaysEggs();
+    public boolean hasGills();
+}
