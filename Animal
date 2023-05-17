@@ -1,0 +1,63 @@
+abstract public class Animal {
+
+    //state
+    protected boolean mammals;
+    protected boolean carnivorous;
+    protected int mood;
+
+
+    public static final int moodHappy = 1;
+    public static final int moodScare = 0 ;
+
+
+    //ctor
+    public Animal(boolean mammals, boolean carnivorous, int mood) {
+        this.mammals = mammals;
+        this.carnivorous = carnivorous;
+        this.mood = mood;
+    }
+
+    public abstract void sayHello();
+
+    public abstract void sayHello(int mood);
+
+    //g+s
+
+    public void setMammals(boolean mammals) {
+        this.mammals = mammals;
+    }
+
+    public void setCarnivorous(boolean carnivorous) {
+        this.carnivorous = carnivorous;
+    }
+
+
+    public boolean isMammals() {
+        return mammals;
+    }
+
+    public boolean isCarnivorous() {
+        return carnivorous;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "mammals=" + mammals +
+                ", carnivorous=" + carnivorous +
+                ", mood=" + mood +
+                '}';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
