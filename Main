@@ -1,0 +1,45 @@
+public class Main {
+    public static void main(String[] args) {
+
+
+        Dog shocko = new Dog(true,true,1);
+        shocko.sayHello();
+        shocko.sayHello(1);
+        shocko.sayHello(0);
+        System.out.println(shocko.getNumOfLegs());
+
+        System.out.println("-------------------------------");
+
+        Cat micki = new Cat(true,true,1);
+        micki.sayHello();
+        micki.sayHello(1);
+        micki.sayHello(0);
+        System.out.println(shocko.getNumOfLegs());
+
+        System.out.println("-------------------------------");
+
+        Frog klark = new Frog(false,false,1);
+        klark.sayHello();
+        klark.sayHello(1);
+        klark.sayHello(2);
+        System.out.println(klark.getNumOfLegs());
+        System.out.println(klark.hasGills());
+        System.out.println(klark.hasLaysEggs());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}
